@@ -32,8 +32,8 @@ public class DeliveryServiceImplTest {
         sendDeliveryRequest.setName("G-String");
         sendDeliveryRequest.setDescription("Pink Lanky G-String");
         sendDeliveryRequest.setWeight(0.12);
-        sendDeliveryRequest.setSender("Abdulkadir");
-        sendDeliveryRequest.setRecipient("Opeyemi");
+        sendDeliveryRequest.setSender("chibuzo");
+        sendDeliveryRequest.setRecipient("winnie");
 
         deliveryService.sendDelivery(sendDeliveryRequest);
 
@@ -48,8 +48,8 @@ public class DeliveryServiceImplTest {
         sendDeliveryRequest.setName("G-String");
         sendDeliveryRequest.setDescription("Pink Lanky G-String");
         sendDeliveryRequest.setWeight(0.12);
-        sendDeliveryRequest.setSender("Abdlkadir");
-        sendDeliveryRequest.setRecipient("Opeyemi");
+        sendDeliveryRequest.setSender("chibuzo");
+        sendDeliveryRequest.setRecipient("winnie");
 
         deliveryService.sendDelivery(sendDeliveryRequest);
         assertEquals(1, packages.count());
@@ -64,8 +64,8 @@ public class DeliveryServiceImplTest {
         sendDeliveryRequest.setName("G-String");
         sendDeliveryRequest.setDescription("Pink Lanky G-String");
         sendDeliveryRequest.setWeight(0.12);
-        sendDeliveryRequest.setSender("Abdulkadir");
-        sendDeliveryRequest.setRecipient("Opeyemi");
+        sendDeliveryRequest.setSender("chibuzo");
+        sendDeliveryRequest.setRecipient("winnie");
 
         var response = deliveryService.sendDelivery(sendDeliveryRequest);
         assertNotNull(response.getTrackingNumber());
